@@ -1,25 +1,13 @@
-codigo_cpp = [ //array com trechos de código
-    "int main() { return 0; }",
-    "cout << 'Hello, world!';",
-    "for(int i = 0; i < 10; i++) { cout << i; }",
-    "if(x > 0) cout << 'positivo';",
-    "while(true) { break; }",
-    "int soma = a + b;",
-    "string nome = 'Tiago';",
-    "bool ativo = true;",
-    "for(auto n : numeros) cout << n;",
-    "vector<int> v = {1, 2, 3};",
-    "cout << sqrt(9);",
-    "if(a == b) cout << 'iguais'; else cout << 'diferentes';",
-    "int resultado = pow(2, 8);",
-    "cout << fixed << setprecision(2) << pi;",
-    "return x * y + z;",
-	""
-];
+codigo_cpp = []; //array com trechos de código
+
+global.tempo = 190*60;
 
 tela = "clear"; //controle se tem coisa na tela ou não
 erro = 0; //contagem de erro
-trava = false;
+trava = false; //pra impedir de digitar
+errados=[]; //guardar letra digitada errada
+gameover = false; //caso ele perca
+vitoria = false;
 
 frases = { //struct
 	frase_escolhida_index: 0, //indice da frase escolhida aleatoriamente
@@ -36,7 +24,7 @@ frases = { //struct
 		tam_frase_original = tam_frase;
 		frase = []; //array vazio que será preenchido apenas com letras (sem espaços)
 		for(var i=0;i<tam_frase; i++) { //inicia o vetor com todas as letras
-			if(string_char_at(frase_escolhida, i + 1) != " "){
+			if(string_char_at(frase_escolhida, i + 1) != " " && string_char_at(frase_escolhida, i + 1) != "ª"  && string_char_at(frase_escolhida, i + 1) != "º"){
 				array_push(frase, {
 					letra: string_char_at(frase_escolhida, i + 1),
 					cor: "branco"
@@ -47,3 +35,5 @@ frases = { //struct
 		frase_pos = 0;
 	}
 }
+
+tempo=0;

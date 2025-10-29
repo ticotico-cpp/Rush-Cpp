@@ -1,14 +1,16 @@
-if(keyboard_lastkey == vk_backspace) { //se apertar backspace
+if(keyboard_lastkey == vk_backspace && !gameover  && !vitoria) { //se apertar backspace
 	if(frases.frase_pos>0) { //e não for a primeira
 		if(frases.frase[frases.frase_pos-1].cor == "vermelho") { // ver se tava errado
 			erro--; //se apagou o errado, sumiu um erro
+			array_delete(errados, array_length(errados)-1, 1)
 		}
 		frases.frase[frases.frase_pos-1].cor = "branco"; //muda a cor da letra atual pra branco...
 		frases.frase_pos--; //... e volta uma letra
 	}
 }
 else if(keyboard_lastkey == vk_shift) {} //pra não acusar erro quando apertarem shift
-else if(keyboard_lastkey == vk_space) {} //pra não acusar erro quando apertarem shift
+else if(keyboard_lastkey == vk_space) {} //pra não acusar erro quando apertarem espaço
+else if(keyboard_lastkey == vk_enter) {} //pra não acusar erro quando apertarem enter
 else if(frases.frase[frases.frase_pos].letra == keyboard_lastchar) { // se acertar a letra
 	if (!trava) {
 		frases.frase[frases.frase_pos].cor = "azul"; //muda a cor pra azul
@@ -19,5 +21,6 @@ else if(frases.frase[frases.frase_pos].letra == keyboard_lastchar) { // se acert
 		frases.frase[frases.frase_pos].cor = "vermelho"; //muda pra vermelho
 		frases.frase_pos++; //e vai pra próxima
 		erro++; //aumenta um erro
+		array_push(errados, keyboard_lastchar);
 	}
 }
