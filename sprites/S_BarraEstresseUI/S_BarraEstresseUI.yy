@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD:sprites/S_BarraEstresseUI/S_BarraEstresseUI.yy
-  "$GMSprite":"",
-  "%Name":"S_BarraEstresseUI",
-=======
   "$GMSprite":"v2",
   "%Name":"S_BarraEstresse",
->>>>>>> 7b5a28766c3b0054c3541eb9973ce1f1acadb0be:sprites/S_BarraEstresse/S_BarraEstresse.yy
   "bboxMode":0,
   "bbox_bottom":15,
   "bbox_left":6,
