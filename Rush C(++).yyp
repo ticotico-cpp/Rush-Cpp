@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"Rush C(++)",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"Rush C(++)",
   "resources":[
@@ -40,6 +40,7 @@
     {"id":{"name":"obj_CodigoDificil","path":"objects/obj_CodigoDificil/obj_CodigoDificil.yy",},},
     {"id":{"name":"obj_CodigoFacil","path":"objects/obj_CodigoFacil/obj_CodigoFacil.yy",},},
     {"id":{"name":"obj_CodigoMedio","path":"objects/obj_CodigoMedio/obj_CodigoMedio.yy",},},
+    {"id":{"name":"obj_Energia","path":"objects/obj_Energia/obj_Energia.yy",},},
     {"id":{"name":"obj_Marcador","path":"objects/obj_Marcador/obj_Marcador.yy",},},
     {"id":{"name":"obj_Tela","path":"objects/obj_Tela/obj_Tela.yy",},},
     {"id":{"name":"Timer","path":"objects/Timer/Timer.yy",},},
@@ -50,8 +51,10 @@
     {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"id":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
     {"id":{"name":"S_Background2","path":"sprites/S_Background2/S_Background2.yy",},},
-    {"id":{"name":"S_BalaodeFalaUI","path":"sprites/S_BalaodeFalaUI/S_BalaodeFalaUI.yy",},},
-    {"id":{"name":"S_BarraEstresseUI","path":"sprites/S_BarraEstresseUI/S_BarraEstresseUI.yy",},},
+    {"id":{"name":"S_BalaodeFala","path":"sprites/S_BalaodeFala/S_BalaodeFala.yy",},},
+    {"id":{"name":"S_BarraEstresse_Red","path":"sprites/S_BarraEstresse_Red/S_BarraEstresse_Red.yy",},},
+    {"id":{"name":"S_BarraEstresse","path":"sprites/S_BarraEstresse/S_BarraEstresse.yy",},},
+
     {"id":{"name":"S_FundoMonitor","path":"sprites/S_FundoMonitor/S_FundoMonitor.yy",},},
     {"id":{"name":"S_IconesMonitor1","path":"sprites/S_IconesMonitor1/S_IconesMonitor1.yy",},},
     {"id":{"name":"S_Janela2","path":"sprites/S_Janela2/S_Janela2.yy",},},
@@ -68,8 +71,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"roomId":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
