@@ -51,7 +51,7 @@
     {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"id":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
     {"id":{"name":"S_Background2","path":"sprites/S_Background2/S_Background2.yy",},},
-    {"id":{"name":"S_BalaodeFala","path":"sprites/S_BalaodeFala/S_BalaodeFala.yy",},},
+    {"id":{"name":"S_BalaodeFalaUI","path":"sprites/S_BalaodeFalaUI/S_BalaodeFalaUI.yy",},},
     {"id":{"name":"S_BarraEstresse_Red","path":"sprites/S_BarraEstresse_Red/S_BarraEstresse_Red.yy",},},
     {"id":{"name":"S_BarraEstresse","path":"sprites/S_BarraEstresse/S_BarraEstresse.yy",},},
 
