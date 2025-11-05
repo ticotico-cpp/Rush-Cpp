@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD:sprites/S_IconesMonitor1/S_IconesMonitor1.yy
   "$GMSprite":"",
   "%Name":"S_IconesMonitor1",
+=======
+  "$GMSprite":"v2",
+  "%Name":"S_IconesMonitor",
+>>>>>>> 7b5a28766c3b0054c3541eb9973ce1f1acadb0be:sprites/S_IconesMonitor/S_IconesMonitor.yy
   "bboxMode":0,
   "bbox_bottom":836,
   "bbox_left":68,
@@ -12,7 +17,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9a0af338-b300-42f3-a0c5-4dffc7f53777","name":"9a0af338-b300-42f3-a0c5-4dffc7f53777","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9a0af338-b300-42f3-a0c5-4dffc7f53777","name":"9a0af338-b300-42f3-a0c5-4dffc7f53777","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -70,9 +75,13 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+<<<<<<< HEAD:sprites/S_IconesMonitor1/S_IconesMonitor1.yy
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9a0af338-b300-42f3-a0c5-4dffc7f53777","path":"sprites/S_IconesMonitor1/S_IconesMonitor1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"0b218fb3-c7ac-4504-9670-f672fcc77232","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+=======
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9a0af338-b300-42f3-a0c5-4dffc7f53777","path":"sprites/S_IconesMonitor/S_IconesMonitor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0b218fb3-c7ac-4504-9670-f672fcc77232","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+>>>>>>> 7b5a28766c3b0054c3541eb9973ce1f1acadb0be:sprites/S_IconesMonitor/S_IconesMonitor.yy
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
