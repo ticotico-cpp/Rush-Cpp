@@ -11,4 +11,4 @@ codigo_cpp_facil = [
 codigo_cpp = codigo_cpp_facil;
 array_insert(codigo_cpp, array_lenght(codigo_cpp), "");
 
-global.tempo*=0.8;
+global.tempo*=1.2;

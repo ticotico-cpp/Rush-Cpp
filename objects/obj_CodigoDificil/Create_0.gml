@@ -12,4 +12,4 @@ codigo_cpp = codigo_cpp_dificil;
 
 array_insert(codigo_cpp, array_lenght(codigo_cpp), "");
 
-global.tempo*=1.1;
+global.tempo*=0.8;
