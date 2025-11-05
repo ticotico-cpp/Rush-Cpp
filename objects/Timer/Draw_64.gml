@@ -1,4 +1,4 @@
-if (global.tempo > 0) {
+if (global.tempo > 0 && !obj_Tela.gameover && !obj_Tela.vitoria) {
 	var total_seconds = floor(global.tempo / 60); //calculo de tempo pro timer
 	var minutos = floor(total_seconds / 60);
 	var segundos = total_seconds mod 60;

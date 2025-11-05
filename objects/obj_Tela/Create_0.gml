@@ -1,6 +1,7 @@
 codigo_cpp = []; //array com trechos de código
+codigo_alt = [];
 
-global.tempo = 190*60;
+global.tempo = 5*60*60;
 
 tela = "clear"; //controle se tem coisa na tela ou não
 erro = 0; //contagem de erro
@@ -8,9 +9,10 @@ trava = false; //pra impedir de digitar
 errados=[]; //guardar letra digitada errada
 gameover = false; //caso ele perca
 vitoria = false;
+usando_alternativo = false;
 
 frases = { //struct
-	frase_escolhida_index: 0, //indice da frase escolhida aleatoriamente
+	frase_escolhida_index: -1, //indice da frase escolhida aleatoriamente
 	frase_escolhida: "", //frase escolhida aleatoriamente
 	frase: [], //pra cada letra
 	tam_frase: 0, //tamanho da frase escolhida
@@ -29,9 +31,11 @@ frases = { //struct
 		// Troca a frase
 		frase_original_backup = frase_escolhida;
 		frase_escolhida = codigo_alternativo;
-		// Recria o array de letras
-		frase = [];
-		for(var i=0; i < tam_frase; i++) {
+			// Atualiza tamanhos com base na nova frase
+			tam_frase_original = string_length(frase_escolhida);
+			// Recria o array de letras
+			frase = [];
+			for(var i=0; i < tam_frase_original; i++) {
 			if(string_char_at(frase_escolhida, i + 1) != " " && string_char_at(frase_escolhida, i + 1) != "ª" && string_char_at(frase_escolhida, i + 1) != "º"){
 				var cor_atual = "branco";
 				var indice_array = array_length(frase);
@@ -44,6 +48,9 @@ frases = { //struct
 				});
 			}
 		}
+			// Atualiza tamanho real e reposiciona cursor de forma segura
+			tam_frase = array_length(frase);
+			frase_pos = min(pos_atual, tam_frase);
 		usando_alternativo = true;
 	},
 	reverterCodigo: function(codigo_original){ //reverte para o código original mantendo estado
@@ -56,9 +63,11 @@ frases = { //struct
 		var pos_atual = frase_pos;
 		// Restaura a frase original
 		frase_escolhida = codigo_original;
-		// Recria o array de letras
-		frase = [];
-		for(var i=0; i < tam_frase; i++) {
+			// Atualiza tamanhos com base na frase original
+			tam_frase_original = string_length(frase_escolhida);
+			// Recria o array de letras
+			frase = [];
+			for(var i=0; i < tam_frase_original; i++) {
 			if(string_char_at(frase_escolhida, i + 1) != " " && string_char_at(frase_escolhida, i + 1) != "ª" && string_char_at(frase_escolhida, i + 1) != "º"){
 				var cor_atual = "branco";
 				var indice_array = array_length(frase);
@@ -71,12 +80,14 @@ frases = { //struct
 				});
 			}
 		}
-		usando_alternativo = false;
+			// Atualiza tamanho real e reposiciona cursor de forma segura
+			tam_frase = array_length(frase);
+			frase_pos = min(pos_atual, tam_frase);
+			usando_alternativo = false;
 	},
 	initFrase: function(codigos){ //pra inicializar tudo
-		frase_escolhida_index = irandom(array_length(codigos)-1);
+		frase_escolhida_index += 1;
 		frase_escolhida = codigos[frase_escolhida_index];
-		array_delete(codigos, frase_escolhida_index, 1); //deleta a escolhida pra não puxar ela denovo
 		tam_frase = string_length(frase_escolhida);
 		tam_frase_original = tam_frase;
 		frase = []; //array vazio que será preenchido apenas com letras (sem espaços)
