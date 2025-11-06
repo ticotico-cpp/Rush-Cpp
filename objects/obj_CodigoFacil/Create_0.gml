@@ -8,7 +8,14 @@ codigo_cpp_facil = [
     "int main(){ªºint numeros[5] = {1,2,3,4,5};ªºint soma = 0;ªºfor(int i=0; i<5; i++){ªººsoma += numeros[i];ªº}ªºcout << soma;ªºreturn 0;ª}"
 ];
 
-codigo_cpp = codigo_cpp_facil;
-array_insert(codigo_cpp, array_lenght(codigo_cpp), "");
+codigo_cpp_facil_alt = [ 
+	"1nt m41n(){ªº1nt s0m4 = 0;ªºf0r(1nt | = 0; | < 5; |++){ªººs0m4 += |;ªº}ªºc0ut << s0m4;ªºr3turn 0;ª}", 
+	"v01d m3ns4g3m(){ªºc0ut << '0l4 mund0!';ªºc0ut << 'B3m v1nd0 40 tr31n0 d3 d1g1t4c40!';ª}ª1nt m41n(){ªºm3ns4g3m();ªºr3turn 0;ª}", 
+	"1nt d0br0(1nt >){ªºr3turn > * 2;ª}ª1nt m41n(){ªºf0r(1nt | = 1; | <= 10; |++){ªººc0ut << d0br0(|) << ' ';ªº}ªºr3turn 0;ª}", 
+	"1nt m41n(){ªº1nt num3r0s[5] = {1,2,3,4,5};ªº1nt s0m4 = 0;ªºf0r(1nt |=0; |<5; |++){ªººs0m4 += num3r0s[|];ªº}ªºc0ut << s0m4;ªºr3turn 0;ª}" 
+];
 
-global.tempo*=0.8;
+codigo_cpp = codigo_cpp_facil;
+codigo_alt = codigo_cpp_facil_alt;
+
+global.tempo*=1.2;
