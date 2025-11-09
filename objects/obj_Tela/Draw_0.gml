@@ -7,11 +7,11 @@
 var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
  
  if(tela=="full" && !gameover  && !vitoria) { //se tiver coisa na tela
-	 var escala_x = room_width / 900.0; // 2.4
-	 var escala_y = room_height / 700.0; // 1.8
-	  var margem_x = 30 * escala_x; // margem inicial
+	 var escala_x = room_width / 1200.0; // 2.4
+	 var escala_y = room_height / 1000.0; // 1.8
+	 var margem_x = x; // margem inicial
 	 var espacamento_char = 14 * escala_x; // espaçamento entre caracteres
-	 var altura_linha = 30 * escala_y; // altura de cada linha
+	 var altura_linha = 40 * escala_y; // altura de cada linha
 	 var limite_largura = 560 * escala_x; // limite antes de quebrar linha
 	 var espacamento_tab = 56 * escala_x; // espaçamento do tab
 	 var offset_erro = 17 * escala_y; // offset para mostrar erro
@@ -31,7 +31,7 @@ var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
 		 if(char_atual == " ") {
 			 //se for espaço, exibe em branco
 			 draw_set_color(c_white);
-			 draw_text(coluna, altura_linha*linha, " ");
+			 draw_text(coluna, altura_linha*linha+y, " ");
 		 } else if(char_atual == "ª"){ //equivalente ao \n
 			 linha++;
 			 last_break = quebra;
@@ -44,7 +44,7 @@ var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
 			 if(letra_index < letras_total && frases.frase[letra_index].cor == "branco") {
 				 if(!findpos){
 					marcador.x = coluna;
-					marcador.y = linha*altura_linha+offset_marcador;
+					marcador.y = linha*altura_linha+offset_marcador+y;
 					findpos = true;
 					if(marcador.image_index < 1){
 						draw_set_color(c_black);
@@ -58,14 +58,14 @@ var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
 				 draw_set_color(c_blue);
 			 } else if(letra_index < letras_total && frases.frase[letra_index].cor == "vermelho") {
 				 draw_set_color(c_red);
-				 draw_text(coluna, altura_linha*linha-offset_erro, errados[poserro]); 
+				 draw_text(coluna, altura_linha*linha-offset_erro+y-10, errados[poserro]); 
 				 poserro++;
 				 draw_set_color(c_grey);
 			 	} else {
 				 // Fallback seguro caso o índice esteja fora do array ou cor desconhecida
 				 draw_set_color(c_white);
 				}
-			 draw_text(coluna, altura_linha*linha, char_atual);
+			 draw_text(coluna, altura_linha*linha+y, char_atual);
 			 if(letra_index < letras_total) {
 				 letra_index++; // avança somente se ainda houver letra correspondente
 			 }
@@ -74,6 +74,7 @@ var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
 }
 
 if(gameover) { //Tela de Game Over
+	room = Derrota;
 	instance_destroy(marcador);
 	draw_set_font(f_grande);
 	draw_set_color(c_red);
@@ -81,6 +82,7 @@ if(gameover) { //Tela de Game Over
 	draw_text(room_width/2, room_height/2, "GAME OVER");
 }
 if(vitoria) { //Tela de Vitória
+	room = Vitoria;
 	instance_destroy(marcador);
 	draw_set_font(f_grande);
 	draw_set_color(c_green);

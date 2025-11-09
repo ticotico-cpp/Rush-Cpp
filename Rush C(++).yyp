@@ -36,6 +36,7 @@
   "name":"Rush C(++)",
   "resources":[
     {"id":{"name":"f_grande","path":"fonts/f_grande/f_grande.yy",},},
+    {"id":{"name":"f_medodica","path":"fonts/f_medodica/f_medodica.yy",},},
     {"id":{"name":"f_padrao","path":"fonts/f_padrao/f_padrao.yy",},},
     {"id":{"name":"obj_BotaoIniciar","path":"objects/obj_BotaoIniciar/obj_BotaoIniciar.yy",},},
     {"id":{"name":"obj_CodigoDificil","path":"objects/obj_CodigoDificil/obj_CodigoDificil.yy",},},
