@@ -96,6 +96,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
 =======
 >>>>>>> Stashed changes
@@ -106,6 +107,14 @@
     {"roomId":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
 =======
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
+    {"roomId":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
+>>>>>>> Stashed changes
+=======
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
     {"roomId":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
