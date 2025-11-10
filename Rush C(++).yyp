@@ -47,12 +47,16 @@
     {"id":{"name":"obj_ControladorTutorial","path":"objects/obj_ControladorTutorial/obj_ControladorTutorial.yy",},},
     {"id":{"name":"obj_ControladorVitoria","path":"objects/obj_ControladorVitoria/obj_ControladorVitoria.yy",},},
     {"id":{"name":"obj_Energia","path":"objects/obj_Energia/obj_Energia.yy",},},
-    {"id":{"name":"obj_GatoIdle","path":"objects/obj_GatoIdle/obj_GatoIdle.yy",},},
+    {"id":{"name":"obj_Gato","path":"objects/obj_Gato/obj_Gato.yy",},},
     {"id":{"name":"obj_Marcador","path":"objects/obj_Marcador/obj_Marcador.yy",},},
+    {"id":{"name":"obj_PatoDerrota","path":"objects/obj_PatoDerrota/obj_PatoDerrota.yy",},},
     {"id":{"name":"obj_PatoIdle","path":"objects/obj_PatoIdle/obj_PatoIdle.yy",},},
+    {"id":{"name":"obj_PatoJump","path":"objects/obj_PatoJump/obj_PatoJump.yy",},},
     {"id":{"name":"obj_PatoMenu","path":"objects/obj_PatoMenu/obj_PatoMenu.yy",},},
     {"id":{"name":"obj_Tela","path":"objects/obj_Tela/obj_Tela.yy",},},
+    {"id":{"name":"obj_TelaRoom2","path":"objects/obj_TelaRoom2/obj_TelaRoom2.yy",},},
     {"id":{"name":"obj_Timer","path":"objects/obj_Timer/obj_Timer.yy",},},
+    {"id":{"name":"obj_TransicaoESC","path":"objects/obj_TransicaoESC/obj_TransicaoESC.yy",},},
     {"id":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -69,6 +73,7 @@
     {"id":{"name":"FundoMonitor","path":"sprites/FundoMonitor/FundoMonitor.yy",},},
     {"id":{"name":"FundoTutorial","path":"sprites/FundoTutorial/FundoTutorial.yy",},},
     {"id":{"name":"FundoVitoria","path":"sprites/FundoVitoria/FundoVitoria.yy",},},
+    {"id":{"name":"GatoCarinho","path":"sprites/GatoCarinho/GatoCarinho.yy",},},
     {"id":{"name":"GatoIdle","path":"sprites/GatoIdle/GatoIdle.yy",},},
     {"id":{"name":"IconesMonitor","path":"sprites/IconesMonitor/IconesMonitor.yy",},},
     {"id":{"name":"Janela","path":"sprites/Janela/Janela.yy",},},
@@ -76,9 +81,11 @@
     {"id":{"name":"Mesa","path":"sprites/Mesa/Mesa.yy",},},
     {"id":{"name":"MolduraMonitor","path":"sprites/MolduraMonitor/MolduraMonitor.yy",},},
     {"id":{"name":"Monitor","path":"sprites/Monitor/Monitor.yy",},},
+    {"id":{"name":"PatoDerrota","path":"sprites/PatoDerrota/PatoDerrota.yy",},},
     {"id":{"name":"PatoEstatico","path":"sprites/PatoEstatico/PatoEstatico.yy",},},
     {"id":{"name":"PatoEstaticoMenu","path":"sprites/PatoEstaticoMenu/PatoEstaticoMenu.yy",},},
     {"id":{"name":"PatoIdle","path":"sprites/PatoIdle/PatoIdle.yy",},},
+    {"id":{"name":"PatoJump","path":"sprites/PatoJump/PatoJump.yy",},},
     {"id":{"name":"S_BarraEstresse_Red","path":"sprites/S_BarraEstresse_Red/S_BarraEstresse_Red.yy",},},
     {"id":{"name":"S_BarraEstresse","path":"sprites/S_BarraEstresse/S_BarraEstresse.yy",},},
     {"id":{"name":"S_Marcador","path":"sprites/S_Marcador/S_Marcador.yy",},},
@@ -88,12 +95,21 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+<<<<<<< Updated upstream
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+=======
+>>>>>>> Stashed changes
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+<<<<<<< Updated upstream
     {"roomId":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
+=======
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
+    {"roomId":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
+>>>>>>> Stashed changes
   ],
   "templateType":"game",
   "TextureGroups":[
