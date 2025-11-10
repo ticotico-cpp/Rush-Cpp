@@ -1,7 +1,7 @@
- if(draw_get_font() == f_grande) {
+ if(draw_get_font() != f_padrao) {
 	draw_set_font(f_padrao);
 }
- if(draw_get_halign() == fa_center) {
+ if(draw_get_halign() != fa_left) {
 	draw_set_halign(fa_left);
 }
 var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
@@ -10,9 +10,8 @@ var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
 	 var escala_x = room_width / 1200.0; // 2.4
 	 var escala_y = room_height / 1000.0; // 1.8
 	 var margem_x = x; // margem inicial
-	 var espacamento_char = 14 * escala_x; // espaçamento entre caracteres
+	 var espacamento_char = 16 * escala_x; // espaçamento entre caracteres
 	 var altura_linha = 40 * escala_y; // altura de cada linha
-	 var limite_largura = 560 * escala_x; // limite antes de quebrar linha
 	 var espacamento_tab = 56 * escala_x; // espaçamento do tab
 	 var offset_erro = 17 * escala_y; // offset para mostrar erro
 	 var offset_marcador = 3 * escala_y; // offset do marcador
@@ -75,17 +74,7 @@ var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
 
 if(gameover) { //Tela de Game Over
 	room = Derrota;
-	instance_destroy(marcador);
-	draw_set_font(f_grande);
-	draw_set_color(c_red);
-	draw_set_halign(fa_center);
-	draw_text(room_width/2, room_height/2, "GAME OVER");
 }
 if(vitoria) { //Tela de Vitória
 	room = Vitoria;
-	instance_destroy(marcador);
-	draw_set_font(f_grande);
-	draw_set_color(c_green);
-	draw_set_halign(fa_center);
-	draw_text(room_width/2, room_height/2, "VITORIA");
 }
