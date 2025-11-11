@@ -15,10 +15,16 @@ if (etapa == 1) {
             indice = 0;
             timer = 0;
         }
-    } else if (indice < string_length(caixa1_texto) && timer > velocidade) {
+    } 
+    else if (indice < string_length(caixa1_texto) && timer > velocidade) {
         indice++;
         caixa1_mostrar = string_copy(caixa1_texto, 1, indice);
         timer = 0;
+
+        // Som de tecla (toca a cada caractere)
+        if (!audio_is_playing(Snd_click)) {
+            audio_play_sound(Snd_click, 1, false);
+        }
 
         // Marca como pronta quando terminar
         if (indice >= string_length(caixa1_texto)) caixa1_pronta = true;
@@ -35,12 +41,18 @@ else if (etapa == 2) {
             caixa2_pronta = true;
         } else {
             // Já terminou tudo → vai para a room principal
-            room_goto(Room1);
+            room_goto_next();
         }
-    } else if (indice < string_length(caixa2_texto) && timer > velocidade) {
+    } 
+    else if (indice < string_length(caixa2_texto) && timer > velocidade) {
         indice++;
         caixa2_mostrar = string_copy(caixa2_texto, 1, indice);
         timer = 0;
+
+        // Som de tecla (toca a cada caractere)
+        if (!audio_is_playing(Snd_click)) {
+            audio_play_sound(Snd_click, 1, false);
+        }
 
         // Marca como pronta quando terminar
         if (indice >= string_length(caixa2_texto)) caixa2_pronta = true;

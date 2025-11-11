@@ -39,11 +39,14 @@
     {"id":{"name":"f_medodica","path":"fonts/f_medodica/f_medodica.yy",},},
     {"id":{"name":"f_medodicaGrande","path":"fonts/f_medodicaGrande/f_medodicaGrande.yy",},},
     {"id":{"name":"f_padrao","path":"fonts/f_padrao/f_padrao.yy",},},
+    {"id":{"name":"obj_BotaoEscolha","path":"objects/obj_BotaoEscolha/obj_BotaoEscolha.yy",},},
     {"id":{"name":"obj_BotaoIniciar","path":"objects/obj_BotaoIniciar/obj_BotaoIniciar.yy",},},
     {"id":{"name":"obj_CodigoDificil","path":"objects/obj_CodigoDificil/obj_CodigoDificil.yy",},},
     {"id":{"name":"obj_CodigoFacil","path":"objects/obj_CodigoFacil/obj_CodigoFacil.yy",},},
     {"id":{"name":"obj_CodigoMedio","path":"objects/obj_CodigoMedio/obj_CodigoMedio.yy",},},
     {"id":{"name":"obj_ControladorDerrota","path":"objects/obj_ControladorDerrota/obj_ControladorDerrota.yy",},},
+    {"id":{"name":"obj_ControladorRoom2","path":"objects/obj_ControladorRoom2/obj_ControladorRoom2.yy",},},
+    {"id":{"name":"obj_ControladorSelecao","path":"objects/obj_ControladorSelecao/obj_ControladorSelecao.yy",},},
     {"id":{"name":"obj_ControladorTutorial","path":"objects/obj_ControladorTutorial/obj_ControladorTutorial.yy",},},
     {"id":{"name":"obj_ControladorVitoria","path":"objects/obj_ControladorVitoria/obj_ControladorVitoria.yy",},},
     {"id":{"name":"obj_Energia","path":"objects/obj_Energia/obj_Energia.yy",},},
@@ -54,19 +57,20 @@
     {"id":{"name":"obj_PatoJump","path":"objects/obj_PatoJump/obj_PatoJump.yy",},},
     {"id":{"name":"obj_PatoMenu","path":"objects/obj_PatoMenu/obj_PatoMenu.yy",},},
     {"id":{"name":"obj_Tela","path":"objects/obj_Tela/obj_Tela.yy",},},
-    {"id":{"name":"obj_TelaRoom2","path":"objects/obj_TelaRoom2/obj_TelaRoom2.yy",},},
     {"id":{"name":"obj_Timer","path":"objects/obj_Timer/obj_Timer.yy",},},
     {"id":{"name":"obj_TransicaoESC","path":"objects/obj_TransicaoESC/obj_TransicaoESC.yy",},},
     {"id":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"SelecaoDificuldade","path":"rooms/SelecaoDificuldade/SelecaoDificuldade.yy",},},
     {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"id":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
     {"id":{"name":"FundoMonitorSequence","path":"sequences/FundoMonitorSequence/FundoMonitorSequence.yy",},},
     {"id":{"name":"Snd_click","path":"sounds/Snd_click/Snd_click.yy",},},
     {"id":{"name":"Snd_gato","path":"sounds/Snd_gato/Snd_gato.yy",},},
     {"id":{"name":"Snd_pato","path":"sounds/Snd_pato/Snd_pato.yy",},},
+    {"id":{"name":"BotaoEscolha","path":"sprites/BotaoEscolha/BotaoEscolha.yy",},},
     {"id":{"name":"BotaoIniciar","path":"sprites/BotaoIniciar/BotaoIniciar.yy",},},
     {"id":{"name":"FundoDerrota","path":"sprites/FundoDerrota/FundoDerrota.yy",},},
     {"id":{"name":"FundoJanela","path":"sprites/FundoJanela/FundoJanela.yy",},},
@@ -91,34 +95,18 @@
     {"id":{"name":"S_Marcador","path":"sprites/S_Marcador/S_Marcador.yy",},},
     {"id":{"name":"TextureBackgroundRoom1","path":"sprites/TextureBackgroundRoom1/TextureBackgroundRoom1.yy",},},
     {"id":{"name":"TextureBackgroundRoom2","path":"sprites/TextureBackgroundRoom2/TextureBackgroundRoom2.yy",},},
+    {"id":{"name":"TextureBackgroundSelecao","path":"sprites/TextureBackgroundSelecao/TextureBackgroundSelecao.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
-=======
->>>>>>> Stashed changes
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"roomId":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-<<<<<<< Updated upstream
-    {"roomId":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
-    {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
-=======
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
-    {"roomId":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
-    {"roomId":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
->>>>>>> Stashed changes
-=======
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
+    {"roomId":{"name":"SelecaoDificuldade","path":"rooms/SelecaoDificuldade/SelecaoDificuldade.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Vitoria","path":"rooms/Vitoria/Vitoria.yy",},},
     {"roomId":{"name":"Derrota","path":"rooms/Derrota/Derrota.yy",},},
->>>>>>> Stashed changes
   ],
   "templateType":"game",
   "TextureGroups":[

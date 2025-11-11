@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Gato",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ControladorRoom2",
+  "eventList":[],
   "managed":true,
-  "name":"obj_Gato",
+  "name":"obj_ControladorRoom2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
