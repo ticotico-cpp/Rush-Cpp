@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.3259637,
+  "duration":2.0897958,
   "exportDir":"",
   "name":"Snd_click",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Snd_click.wav",
+  "soundFile":"Snd_click.mp3",
   "volume":1.0,
 }
