@@ -11,3 +11,8 @@ if (indice < string_length(fala_completa)) {
         fala_mostrada = string_copy(fala_completa, 1, indice);
     }
 }
+
+// Voltar para a tela de seleção de níveis ao pressionar Enter
+if (keyboard_check_pressed(vk_enter)) {
+    room_goto(SelecaoDificuldade);
+}
