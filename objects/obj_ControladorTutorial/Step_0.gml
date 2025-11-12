@@ -58,3 +58,8 @@ else if (etapa == 2) {
         if (indice >= string_length(caixa2_texto)) caixa2_pronta = true;
     }
 }
+
+// Voltar para a tela de seleção de níveis ao pressionar Enter
+if (keyboard_check_pressed(vk_enter)) {
+    room_goto(SelecaoDificuldade);
+}

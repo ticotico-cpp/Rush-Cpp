@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"S_PatoIdle",
   "bboxMode":0,
-  "bbox_bottom":226,
+  "bbox_bottom":227,
   "bbox_left":54,
   "bbox_right":216,
   "bbox_top":64,
@@ -29,7 +29,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":227,
+  "height":228,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"101450c2-abb4-4015-9ede-01fd1921ec57","blendMode":0,"displayName":"default","isLocked":false,"name":"101450c2-abb4-4015-9ede-01fd1921ec57","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

@@ -22,3 +22,13 @@ fala_timer = 0;
 
 // Controle de digitação
 indice = 0;
+
+// Texto de instrução
+instrucao = "Pressione Enter para continuar";
+
+// Configurações visuais
+cor_instrucao = make_color_rgb(50, 50, 50);
+fonte_instrucao = f_medodica;
+
+// Escala do texto 
+escala_instrucao = 0.1;
