@@ -19,4 +19,4 @@ codigo_cpp_dificil_alt = [
 codigo_cpp = codigo_cpp_dificil;
 codigo_alt = codigo_cpp_dificil_alt;
 
-global.tempo*=0.8;
+global.tempo *= 0.8;

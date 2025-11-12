@@ -60,3 +60,5 @@ for (var i = 0; i < 3; i++) {
     );
     botao.nivel_alvo = i + 1; // define o nível (1, 2 e 3)
 }
+
+global.choice = "";

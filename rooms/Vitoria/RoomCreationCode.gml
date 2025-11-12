@@ -1,3 +1,4 @@
-var pato = instance_create_layer(0, 0, "Instances", obj_PatoJump);
-pato.x = 100;
-pato.y = room_height - sprite_get_height(pato.sprite_index) -80;
+var pato = instance_create_layer(664, 218, "Instances", obj_PatoIdle);
+pato.sprite_index = S_PatoJump;
+pato.image_xscale = 2;
+pato.image_yscale = 2;

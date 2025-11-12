@@ -17,5 +17,3 @@ codigo_cpp_facil_alt = [
 
 codigo_cpp = codigo_cpp_facil;
 codigo_alt = codigo_cpp_facil_alt;
-
-global.tempo*=1.2;

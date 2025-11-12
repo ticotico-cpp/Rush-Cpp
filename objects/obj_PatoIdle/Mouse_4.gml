@@ -10,9 +10,3 @@ if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id
     audio_play_sound(Snd_pato, 1, false);
 }
 
-// Quando a animação de pulo termina
-if (pato_pulando && image_index >= sprite_get_number(sprite_index) - 1) {
-    sprite_index = S_PatoIdle; // volta pro idle
-    image_speed = 1;
-    pato_pulando = false; // desativa flag
-}

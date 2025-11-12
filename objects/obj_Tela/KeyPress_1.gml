@@ -7,6 +7,7 @@ if((keyboard_lastkey == vk_backspace || keyboard_lastkey == vk_delete) && !gameo
 		frases.frase[frases.frase_pos-1].cor = "branco"; //muda a cor da letra atual pra branco...
 		frases.frase_pos--; //... e volta uma letra
 	}
+	trava = false;
 }
 //pra não acusar erro quando apertarem algo que não é letra
 else if(keyboard_lastkey == vk_shift) {} 

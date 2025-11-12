@@ -6,7 +6,7 @@
 }
 var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
  
- if(tela=="full" && !gameover  && !vitoria) { //se tiver coisa na tela
+ if(tela=="full" && !gameover  && !vitoria && room == Room1) { //se tiver coisa na tela
 	 var escala_x = room_width / 1200.0; // 2.4
 	 var escala_y = room_height / 1000.0; // 1.8
 	 var margem_x = x; // margem inicial
@@ -23,21 +23,32 @@ var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
 	 var last_break=0; //pra múltiplos tabs
 	 var findpos = false; //se achou onde ficaria o marcador
 	 var poserro=0; //pra localização e contole no array "errados"
+	 var limite_quebra_x = 1566; //limite horizontal para quebra automática de linha
 	 for(var i=0; i<frases.tam_frase_original; i++){
 		 var quebra = i; //pra andar com a frase
-		 var coluna = margem_x+(quebra-last_break)*espacamento_char+tab; //conta pra achar a posição em x
 		 var char_atual = string_char_at(frases.frase_escolhida, i + 1);
+		 if(char_atual == "ª"){ //equivalente ao \n
+			 linha++;
+			 last_break = quebra;
+			 quebra = 0;
+			 tab = 0;
+			 continue;
+		 }
+		 if(char_atual == "º"){ //equivalente ao \t
+			 tab += espacamento_tab;
+			 continue;
+		 }
+		 var coluna = margem_x+(quebra-last_break)*espacamento_char+tab; //conta pra achar a posição em x
+		 if(coluna > limite_quebra_x){
+			 linha++;
+			 last_break = quebra;
+			 tab = 0;
+			 coluna = margem_x+(quebra-last_break)*espacamento_char+tab;
+		 }
 		 if(char_atual == " ") {
 			 //se for espaço, exibe em branco
 			 draw_set_color(c_white);
 			 draw_text(coluna, altura_linha*linha+y, " ");
-		 } else if(char_atual == "ª"){ //equivalente ao \n
-			 linha++;
-			 last_break = quebra;
-			 quebra=0;
-			 tab=0;
-		 } else if(char_atual == "º"){ //equivalente ao \t
-			 tab+=espacamento_tab;
 		 } else {
 			  //se for letra, aplica a cor correspondente (com verificação de limites)
 			 if(letra_index < letras_total && frases.frase[letra_index].cor == "branco") {
@@ -73,8 +84,8 @@ var marcador = obj_Marcador; //pra posicionar o marcador no lugar certo
 }
 
 if(gameover) { //Tela de Game Over
-	room = Derrota;
+	room_goto(Derrota);
 }
-if(vitoria) { //Tela de Vitória
-	room = Vitoria;
+else if(vitoria) { //Tela de Vitória
+	room_goto(Vitoria);
 }

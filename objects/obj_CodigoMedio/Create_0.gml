@@ -16,3 +16,5 @@ codigo_cpp_medio_alt = [
 
 codigo_cpp = codigo_cpp_medio;
 codigo_alt = codigo_cpp_medio_alt;
+
+global.tempo*=0.9;
