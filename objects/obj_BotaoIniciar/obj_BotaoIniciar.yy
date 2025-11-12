@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"BotaoIniciar",
-    "path":"sprites/BotaoIniciar/BotaoIniciar.yy",
+    "name":"S_BotaoIniciar",
+    "path":"sprites/S_BotaoIniciar/S_BotaoIniciar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

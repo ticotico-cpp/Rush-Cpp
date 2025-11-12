@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PatoDerrota",
-    "path":"sprites/PatoDerrota/PatoDerrota.yy",
+    "name":"S_PatoDerrota",
+    "path":"sprites/S_PatoDerrota/S_PatoDerrota.yy",
   },
   "spriteMaskId":null,
   "visible":true,

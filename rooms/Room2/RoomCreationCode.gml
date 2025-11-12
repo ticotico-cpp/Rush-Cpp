@@ -1,4 +1,4 @@
-sprite_prefetch(TextureBackgroundRoom2);
+sprite_prefetch(S_FundoRoom2);
 
 // Criação dos personagens na Room
 // Gato: canto esquerdo, um pouco abaixo do centro

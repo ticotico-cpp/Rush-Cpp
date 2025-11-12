@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PatoJump",
-    "path":"sprites/PatoJump/PatoJump.yy",
+    "name":"S_PatoJump",
+    "path":"sprites/S_PatoJump/S_PatoJump.yy",
   },
   "spriteMaskId":null,
   "visible":true,

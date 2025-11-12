@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"BotaoEscolha",
-    "path":"sprites/BotaoEscolha/BotaoEscolha.yy",
+    "name":"S_BotaoEscolha",
+    "path":"sprites/S_BotaoEscolha/S_BotaoEscolha.yy",
   },
   "spriteMaskId":null,
   "visible":true,

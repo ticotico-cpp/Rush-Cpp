@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PatoEstaticoMenu",
-    "path":"sprites/PatoEstaticoMenu/PatoEstaticoMenu.yy",
+    "name":"S_PatoEstaticoMenu",
+    "path":"sprites/S_PatoEstaticoMenu/S_PatoEstaticoMenu.yy",
   },
   "spriteMaskId":null,
   "visible":true,

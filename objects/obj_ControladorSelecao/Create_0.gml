@@ -36,8 +36,8 @@ fonte_texto = f_medodica;
 
 // Criar 3 botões de escolha
 // Dimensões dos botões
-largura_botao = sprite_get_width(BotaoEscolha);
-altura_botao = sprite_get_height(BotaoEscolha);
+largura_botao = sprite_get_width(S_BotaoEscolha);
+altura_botao = sprite_get_height(S_BotaoEscolha);
 
 // Coordenadas iniciais dos botões (move todos juntos)
 espaco_botoes = 300; // distância entre os botões
